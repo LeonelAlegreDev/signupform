@@ -93,6 +93,7 @@ footer{
     #form{
         width: 90%;
         height: 95%;
+        overflow-y: scroll; 
         background-color: #ffffff89;
     }
 }
