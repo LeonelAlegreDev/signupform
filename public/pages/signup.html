@@ -14,7 +14,7 @@
         </div>
         <div class="card" id="form">
             <header class="one">
-                <h1>Welcom to 'Name of project', <br>
+                <h1>Welcome to 'Name of project', <br>
                     Sign Up to Continue.</h1>
                 <p>
                     Are you already registered? 
@@ -22,14 +22,24 @@
                 </p>
             </header>
             <footer>
-                <form action="#">
+                <form action="#" id="frm-signup">
                     <fieldset class="one">
-                        <label>Email<input type="email" placeholder="Email"></label>
-                        <label>Password<input type="password" placeholder="Password"></label>
+                        <label for="inp-first-name">First name *</label>
+                        <input id="inp-first-name" type="text" placeholder="First name" required>
+                        
+                        <label for="inp-last-name">Last name</label>
+                        <input id="inp-last-name" type="text" placeholder="Last name">
+                        
+                        <label for="inp-email">Email *</label>
+                        <input id="inp-email" type="email" placeholder="Email" required>
+                        
+                        <label for="inp-password">Password *</label>
+                        <input id="inp-password" type="password" placeholder="Password" required>
                         <label>
-                            <input type="checkbox">
+                            <input id="inp-show-password" type="checkbox">
                             <span class="checkable">Show password</span>
                         </label>
+                        
                         <a href="#">Forgot Password?</a>
                         <button id="send" type="submit">Send</button>
                         <button id="google" type="submit">Sign Up with Google</button>
